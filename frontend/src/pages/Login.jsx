@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+export const ACUTE_API_URL = "https://acute-crm-backend.onrender.com/api";
 
 export default function Login(){
   const [email, setEmail] = useState('');
@@ -7,7 +8,10 @@ export default function Login(){
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("https://acute-crm-backend.onrender.com/api";)
+      const res = await axios.post(`${ACUTE_API_URL}/users/login`, {
+        email: email,
+        password: password,
+      });
       localStorage.setItem('token', res.data.token);
       alert('Login successful');
       window.location.href = '/';
