@@ -7,7 +7,8 @@ export default function Login(){
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/users/login', { email, password });
+      const res = await axios.post(const API_URL = "https://acute-crm-backend.onrender.com/api";
+);
       localStorage.setItem('token', res.data.token);
       alert('Login successful');
       window.location.href = '/';
