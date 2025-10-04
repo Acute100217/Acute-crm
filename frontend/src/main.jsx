@@ -3,6 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
+import Register from "./pages/Register";
+
+// Inside <Routes>
+<Route path="/register" element={<Register />} />
 
 import './styles.css'
 
