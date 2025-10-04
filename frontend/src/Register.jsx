@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { ACUTE_API_URL } from "../api";
+import ACUTE_API_URL = "https://acute-crm-backend.onrender.com/api";
 
 export default function Register() {
   const [name, setName] = useState("");
