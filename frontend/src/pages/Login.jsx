@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 import axios from 'axios';
 export const ACUTE_API_URL = "https://acute-crm-backend.onrender.com/api";
 
-<p style={{ textAlign: "center", marginTop: 12 }}>
-  Don’t have an account? <a href="/register" style={{ color: "#003366" }}>Register</a>
-</p>
-
 
 export default function Login(){
   const [email, setEmail] = useState('');
